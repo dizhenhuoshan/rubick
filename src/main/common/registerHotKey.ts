@@ -71,9 +71,9 @@ const registerHotKey = (mainWindow: BrowserWindow): void => {
       mainWindow.setAlwaysOnTop(false);
       mainWindow.setVisibleOnAllWorkspaces(true, { visibleOnFullScreen: true });
       mainWindow.focus();
-      mainWindow.setVisibleOnAllWorkspaces(false, {
-        visibleOnFullScreen: true,
-      });
+      // mainWindow.setVisibleOnAllWorkspaces(false, {
+      //   visibleOnFullScreen: true,
+      // });
       mainWindow.setPosition(wx, wy);
       mainWindow.show();
     });
